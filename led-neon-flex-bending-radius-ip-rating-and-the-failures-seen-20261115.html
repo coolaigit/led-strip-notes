@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LED neon flex — bending radius, IP rating and the failures seen on site</title>
+<meta name="description" content="LED neon flex looks like a simple product: LED strip inside a diffusing sleeve. On site, most failures come from three details that are easy to miss a">
+<style>
+  body { max-width: 720px; margin: 48px auto; padding: 0 20px;
+         font: 17px/1.7 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+         color: #1a1a1a; background: #fdfdfc; }
+  h1 { font-size: 1.9rem; line-height: 1.25; margin-bottom: .4em; }
+  h2 { font-size: 1.25rem; margin-top: 2em; }
+  a { color: #0b5cad; }
+  ul, ol { padding-left: 1.3em; }
+  @media (prefers-color-scheme: dark) {
+    body { background:#141414; color:#e8e8e8; }
+    a { color:#7ab7ff; }
+  }
+</style>
+</head>
+<body>
+<article>
+<h1>LED neon flex — bending radius, IP rating and the failures seen on site</h1>
+<p>LED neon flex looks like a simple product: LED strip inside a diffusing sleeve. On site, most failures come from three details that are easy to miss at the quoting stage — the bending plane, the end caps, and how the run is fed.</p>
+<h2>Bending radius and plane</h2>
+<p>Top-view (horizontal bend) and side-view (vertical bend) products are not interchangeable. A 16 × 16 mm square silicone profile with a stated minimum radius of 60 mm usually means 60 mm in its designed bending plane only. Bend a top-view product vertically and the FPC inside is loaded edgewise; the copper traces crack, often weeks later after thermal cycling, and the failure shows up as a dead section rather than a full outage.</p>
+<p>The radius figure is also measured on the neutral axis of the extrusion, not on the inner face. For tight lettering or logo work, ask the supplier for the minimum radius at the emitting face and for a sample bent to your actual radius before committing to a production length. A 30 mm radius on a 20 mm wide body is a different product from a 30 mm radius on an 8 mm body.</p>
+<h2>IP rating is a system property</h2>
+<p>An IP67 or IP68 strip is only IP67 once the ends are sealed. The common site failure is a perfectly good extrusion with a field-cut end closed using silicone sealant over the exposed FPC pads. Moisture wicks along the copper and under the phosphor, and the first 200 mm of the run turns dark within one heating season.</p>
+<p>Factory-moulded end caps, or injection-moulded caps made with the same silicone as the body, are the reliable option. If a run must be cut on site, the correct process is: clean the cut face, fit the supplied cap with the manufacturer's primer, pot the cavity, and cure at the stated temperature before power is applied. Potting over a live or warm assembly traps solvent and causes clouding.</p>
+<p>Also check the cable entry. A glued cable gland on a smooth silicone surface has poor peel strength. Moulded-in cable tails, or a mechanical clip that carries the strain rather than the seal, last longer. For façade work, specify a drip loop at every feed point — water follows the cable into the cap.</p>
+<h2>Feed length and voltage drop</h2>
+<p>Neon flex is usually sold in 24 V with 5 m or 10 m maximum single-feed lengths. The limit is set by the FPC trace resistance inside the extrusion, not by the LED count. Because the body is opaque and diffusing, a 15% brightness gradient at the far end is harder to notice than on bare strip, but the colour shift on warm white is still visible at night.</p>
+<p>For long perimeter runs, feed from both ends or inject power at midpoints with a parallel feeder. Do not daisy-chain two 10 m runs end to end through the connector — the second run will be visibly dimmer and the connector will run hot. A 5 A continuous current through a small two-pin connector is a common thermal weak point; check the connector rating separately from the strip rating.</p>
+<h2>Mounting</h2>
+<p>Silicone expands more than aluminium with temperature. A 10 m run fixed rigidly in an aluminium channel at both ends will buckle in summer sun. Use the supplied mounting clips at the recommended spacing (typically 300 to 500 mm) and leave the specified expansion gap at each end. Adhesive-backed mounting is fine indoors; outdoors, mechanical clips are the only thing that survives UV exposure of the adhesive.</p>
+<h2>UV and yellowing</h2>
+<p>Silicone resists UV far better than PVC or PU. A PVC-body &quot;neon&quot; product will yellow and become brittle after one to two seasons in direct sun. If the installation is outdoors, ask whether the body is silicone or PVC — the two are often listed under the same product category, and the price difference is a useful hint. Request a QUV or equivalent accelerated weathering report with hours and ΔE, not just the word &quot;anti-UV&quot; on a spec sheet.</p>
+<p>I keep the working specification for these parts at <a href="https://illumielectric.com/led-strip-light-manufacturer/led-neon-flex-supplier/" rel="noopener">LED neon flex supplier</a>.</p>
+</article>
+</body>
+</html>
