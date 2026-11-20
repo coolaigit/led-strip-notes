@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Driver placement and isolation — the enclosure decisions that show up later</title>
+<meta name="description" content="The driver is the part of a luminaire that decides both its lifetime and its failure paperwork, and it is also the part most often squeezed into whate">
+<style>
+  body { max-width: 720px; margin: 48px auto; padding: 0 20px;
+         font: 17px/1.7 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+         color: #1a1a1a; background: #fdfdfc; }
+  h1 { font-size: 1.9rem; line-height: 1.25; margin-bottom: .4em; }
+  h2 { font-size: 1.25rem; margin-top: 2em; }
+  a { color: #0b5cad; }
+  ul, ol { padding-left: 1.3em; }
+  @media (prefers-color-scheme: dark) {
+    body { background:#141414; color:#e8e8e8; }
+    a { color:#7ab7ff; }
+  }
+</style>
+</head>
+<body>
+<article>
+<h1>Driver placement and isolation — the enclosure decisions that show up later</h1>
+<p>The driver is the part of a luminaire that decides both its lifetime and its failure paperwork, and it is also the part most often squeezed into whatever space is left after the optics are chosen. Two decisions dominate the outcome: whether the driver sits inside the housing or outside it, and whether the whole assembly is Class I or Class II. Both look like small engineering choices; both come back as warranty claims.</p>
+<h2>Inside or outside the housing</h2>
+<p>An enclosed driver shares the housing's thermal environment. A driver rated for tc 70 °C inside a sealed adjustable spot at full load will not run at tc 70 °C — the optics and the heatsink fins it sits beside push the local ambient well above the room. The standard fix is to derate: drivers chosen for &quot;tc 70 °C at 25 °C ambient&quot; run at tc 70 °C inside the housing only if the housing itself stays below 45 °C. In practice that means a 40 W spot with a 30 W driver runs the driver at 80% load and still sees temperatures it was never qualified for.</p>
+<p>The alternative — driver outside the housing, in the ceiling void or on the track — costs you ingress protection and a length of low-voltage cable. It buys the driver a real thermal life. Downlights destined for insulated ceilings almost always need the external-driver version, whatever the sales sheet implies. If a supplier offers one housing with the driver &quot;integrated&quot;, ask for the thermal measurement at the driver's tc point after two hours at full load, with the trim fitted. That single measurement disqualifies more integrated designs than any datasheet comparison.</p>
+<h2>Isolation is a paperwork boundary, not just a circuit</h2>
+<p>Class II builds need the mains-side circuitry separated from the low-voltage side by reinforced or double insulation throughout — through the PCB, through the connector, through any metal part the user can touch. In a metal housing, the housing itself is a touchable part: it must be bonded to protective earth (Class I) or fully decoupled from the mains side (Class II). A Class II driver bolted to a Class I housing with a metal screw is an isolation failure waiting for an inspector.</p>
+<p>The detail that bites: driver mounting screws. A plastic-cased Class II driver inside a metal housing must not be earthed through its mounting screws if the housing is Class II, and must be earthed if the housing is Class I. The same physical build can be correct or non-compliant depending on a line in the assembly drawing. We keep both variants in the drawing set and mark the housing casting accordingly, because distributors order the Class II version for a job and then ask for the earthed one on the next job.</p>
+<h2>What it means for adjustable and track fittings</h2>
+<p>Adjustable heads move the driver's position relative to the heat path every time the beam is tilted. A gimbal design that keeps the driver off the moving mass (driver in the body, LED on the gimbal) ages better than one that puts the driver in the head — tilting changes the airflow over it, and ceiling voids do not help. On track fittings the driver is in the adapter, which is the hottest spot on the whole fitting when the head is tilted up: the adapter sits in the pocket of hot air rising off the optics.</p>
+<p>The practical questions for a supplier of track and adjustable housings:</p>
+<ol>
+<li>Where is the driver relative to the heat path at full tilt, and is there a temperature measurement at that position?</li>
+<li>Is the isolation (Class I / II) determined by the driver, the housing, or both — and does the marking match the drawing?</li>
+<li>What derating applies when the fitting is installed against insulation, as opposed to the free-air test photo?</li>
+</ol>
+<p>None of these questions appear on a quote comparison. All of them decide whether the fitting is still measuring correctly in year three, and whether the electrician's paperwork closes without a deviation note.</p>
+<p>The current version of this write-up, with the exact part numbers, is at <a href="https://illumielectric.com/ar111-track-light-fixture/" rel="noopener">Illumi Electric</a>.</p>
+<h2>More notes</h2>
+<ul><li><a href="https://coolaigit.github.io/led-strip-notes/led-neon-flex-bending-radius-ip-rating-and-the-failures-seen-20261115.html">led-neon-flex-bending-radius-ip-rating-and-the-failures-seen-20261115.html</a></li></ul>
+</article>
+</body>
+</html>
